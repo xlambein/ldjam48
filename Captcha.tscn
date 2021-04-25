@@ -1,0 +1,122 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Captcha.gd" type="Script" id=1]
+[ext_resource path="res://font_text.tres" type="DynamicFont" id=2]
+[ext_resource path="res://font_title.tres" type="DynamicFont" id=3]
+[ext_resource path="res://recaptcha.tres" type="Theme" id=4]
+
+[node name="Captcha" type="ColorRect"]
+margin_right = 384.0
+margin_bottom = 536.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextRect" type="ColorRect" parent="."]
+anchor_right = 1.0
+margin_left = 8.0
+margin_top = 8.0
+margin_right = -8.0
+margin_bottom = 104.0
+color = Color( 0.290196, 0.564706, 0.886275, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="TextRect"]
+margin_left = 16.0
+margin_top = 16.0
+margin_right = 249.0
+margin_bottom = 45.0
+custom_fonts/font = ExtResource( 2 )
+text = "Select all images with"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TargetLabel" type="Label" parent="TextRect"]
+margin_left = 16.0
+margin_top = 40.0
+margin_right = 184.0
+margin_bottom = 83.0
+custom_fonts/font = ExtResource( 3 )
+text = "puppers"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ImagesRect" type="ReferenceRect" parent="."]
+anchor_top = 0.209
+anchor_right = 1.0
+anchor_bottom = 0.894
+margin_left = 8.0
+margin_top = -0.729889
+margin_right = -8.0
+margin_bottom = 0.110107
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="VerifyButton" type="Button" parent="."]
+anchor_left = 0.822917
+anchor_top = 0.947761
+anchor_right = 0.822917
+anchor_bottom = 0.947761
+margin_left = -60.0
+margin_top = -20.0
+margin_right = 60.0
+margin_bottom = 20.0
+focus_mode = 0
+theme = ExtResource( 4 )
+text = "VERIFY"
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[connection signal="button_down" from="ImagesRect/Captcha Image" to="ImagesRect/Captcha Image" method="_on_Captcha_Image_button_down"]
+[connection signal="button_up" from="ImagesRect/Captcha Image" to="ImagesRect/Captcha Image" method="_on_Captcha_Image_button_up"]
+[connection signal="mouse_entered" from="ImagesRect/Captcha Image" to="ImagesRect/Captcha Image" method="_on_Captcha_Image_mouse_entered"]
+[connection signal="mouse_exited" from="ImagesRect/Captcha Image" to="ImagesRect/Captcha Image" method="_on_Captcha_Image_mouse_exited"]
+[connection signal="pressed" from="ImagesRect/Captcha Image" to="ImagesRect/Captcha Image" method="_on_Captcha_Image_pressed"]
+[connection signal="button_down" from="ImagesRect/Captcha Image2" to="ImagesRect/Captcha Image2" method="_on_Captcha_Image_button_down"]
+[connection signal="button_up" from="ImagesRect/Captcha Image2" to="ImagesRect/Captcha Image2" method="_on_Captcha_Image_button_up"]
+[connection signal="mouse_entered" from="ImagesRect/Captcha Image2" to="ImagesRect/Captcha Image2" method="_on_Captcha_Image_mouse_entered"]
+[connection signal="mouse_exited" from="ImagesRect/Captcha Image2" to="ImagesRect/Captcha Image2" method="_on_Captcha_Image_mouse_exited"]
+[connection signal="pressed" from="ImagesRect/Captcha Image2" to="ImagesRect/Captcha Image2" method="_on_Captcha_Image_pressed"]
+[connection signal="button_down" from="ImagesRect/Captcha Image3" to="ImagesRect/Captcha Image3" method="_on_Captcha_Image_button_down"]
+[connection signal="button_up" from="ImagesRect/Captcha Image3" to="ImagesRect/Captcha Image3" method="_on_Captcha_Image_button_up"]
+[connection signal="mouse_entered" from="ImagesRect/Captcha Image3" to="ImagesRect/Captcha Image3" method="_on_Captcha_Image_mouse_entered"]
+[connection signal="mouse_exited" from="ImagesRect/Captcha Image3" to="ImagesRect/Captcha Image3" method="_on_Captcha_Image_mouse_exited"]
+[connection signal="pressed" from="ImagesRect/Captcha Image3" to="ImagesRect/Captcha Image3" method="_on_Captcha_Image_pressed"]
+[connection signal="button_down" from="ImagesRect/Captcha Image4" to="ImagesRect/Captcha Image4" method="_on_Captcha_Image_button_down"]
+[connection signal="button_up" from="ImagesRect/Captcha Image4" to="ImagesRect/Captcha Image4" method="_on_Captcha_Image_button_up"]
+[connection signal="mouse_entered" from="ImagesRect/Captcha Image4" to="ImagesRect/Captcha Image4" method="_on_Captcha_Image_mouse_entered"]
+[connection signal="mouse_exited" from="ImagesRect/Captcha Image4" to="ImagesRect/Captcha Image4" method="_on_Captcha_Image_mouse_exited"]
+[connection signal="pressed" from="ImagesRect/Captcha Image4" to="ImagesRect/Captcha Image4" method="_on_Captcha_Image_pressed"]
+[connection signal="button_down" from="ImagesRect/Captcha Image5" to="ImagesRect/Captcha Image5" method="_on_Captcha_Image_button_down"]
+[connection signal="button_up" from="ImagesRect/Captcha Image5" to="ImagesRect/Captcha Image5" method="_on_Captcha_Image_button_up"]
+[connection signal="mouse_entered" from="ImagesRect/Captcha Image5" to="ImagesRect/Captcha Image5" method="_on_Captcha_Image_mouse_entered"]
+[connection signal="mouse_exited" from="ImagesRect/Captcha Image5" to="ImagesRect/Captcha Image5" method="_on_Captcha_Image_mouse_exited"]
+[connection signal="pressed" from="ImagesRect/Captcha Image5" to="ImagesRect/Captcha Image5" method="_on_Captcha_Image_pressed"]
+[connection signal="button_down" from="ImagesRect/Captcha Image6" to="ImagesRect/Captcha Image6" method="_on_Captcha_Image_button_down"]
+[connection signal="button_up" from="ImagesRect/Captcha Image6" to="ImagesRect/Captcha Image6" method="_on_Captcha_Image_button_up"]
+[connection signal="mouse_entered" from="ImagesRect/Captcha Image6" to="ImagesRect/Captcha Image6" method="_on_Captcha_Image_mouse_entered"]
+[connection signal="mouse_exited" from="ImagesRect/Captcha Image6" to="ImagesRect/Captcha Image6" method="_on_Captcha_Image_mouse_exited"]
+[connection signal="pressed" from="ImagesRect/Captcha Image6" to="ImagesRect/Captcha Image6" method="_on_Captcha_Image_pressed"]
+[connection signal="button_down" from="ImagesRect/Captcha Image7" to="ImagesRect/Captcha Image7" method="_on_Captcha_Image_button_down"]
+[connection signal="button_up" from="ImagesRect/Captcha Image7" to="ImagesRect/Captcha Image7" method="_on_Captcha_Image_button_up"]
+[connection signal="mouse_entered" from="ImagesRect/Captcha Image7" to="ImagesRect/Captcha Image7" method="_on_Captcha_Image_mouse_entered"]
+[connection signal="mouse_exited" from="ImagesRect/Captcha Image7" to="ImagesRect/Captcha Image7" method="_on_Captcha_Image_mouse_exited"]
+[connection signal="pressed" from="ImagesRect/Captcha Image7" to="ImagesRect/Captcha Image7" method="_on_Captcha_Image_pressed"]
+[connection signal="button_down" from="ImagesRect/Captcha Image8" to="ImagesRect/Captcha Image8" method="_on_Captcha_Image_button_down"]
+[connection signal="button_up" from="ImagesRect/Captcha Image8" to="ImagesRect/Captcha Image8" method="_on_Captcha_Image_button_up"]
+[connection signal="mouse_entered" from="ImagesRect/Captcha Image8" to="ImagesRect/Captcha Image8" method="_on_Captcha_Image_mouse_entered"]
+[connection signal="mouse_exited" from="ImagesRect/Captcha Image8" to="ImagesRect/Captcha Image8" method="_on_Captcha_Image_mouse_exited"]
+[connection signal="pressed" from="ImagesRect/Captcha Image8" to="ImagesRect/Captcha Image8" method="_on_Captcha_Image_pressed"]
+[connection signal="button_down" from="ImagesRect/Captcha Image9" to="ImagesRect/Captcha Image9" method="_on_Captcha_Image_button_down"]
+[connection signal="button_up" from="ImagesRect/Captcha Image9" to="ImagesRect/Captcha Image9" method="_on_Captcha_Image_button_up"]
+[connection signal="mouse_entered" from="ImagesRect/Captcha Image9" to="ImagesRect/Captcha Image9" method="_on_Captcha_Image_mouse_entered"]
+[connection signal="mouse_exited" from="ImagesRect/Captcha Image9" to="ImagesRect/Captcha Image9" method="_on_Captcha_Image_mouse_exited"]
+[connection signal="pressed" from="ImagesRect/Captcha Image9" to="ImagesRect/Captcha Image9" method="_on_Captcha_Image_pressed"]
+[connection signal="pressed" from="VerifyButton" to="." method="_on_VerifyButton_pressed"]
